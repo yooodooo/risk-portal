@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+.gitignore
+.classpath
+**/*.iml
+target
+.project
+**/node_modules
+.settings/
+**/node_modules/
+**/package-lock.json
+*.js.map

@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
  * @author dong.yang
  * @date 2021/6/10 17:41
  */
-@RefreshScope
 @RestController
+@RefreshScope
 public class ConfigController {
 
-    @Value("${project.name:}")
+    @Value("${security.app}")
     private String projectName;
 
-    @Value("${project.org:}")
+    @Value("${security.key}")
     private String projectOrg;
 
     @GetMapping("/config")
     public Object config() {
-        return ImmutableMap.of("name", projectName, "org", projectOrg);
+        return ImmutableMap.of("app", projectName, "key", projectOrg);
     }
 }

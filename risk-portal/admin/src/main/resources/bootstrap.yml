@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: 127.0.0.1:7787
+        group: DEFAULT_GROUP
+        file-extension: yaml
+
+  application:
+    name: risk-portal-admin
+
+  profiles:
+    active: dev
+

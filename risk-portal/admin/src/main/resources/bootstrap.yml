@@ -7,9 +7,28 @@ spring:
         group: DEFAULT_GROUP
         file-extension: yaml
 
+      discovery:
+        server-addr: 127.0.0.1:7787
+
+
   application:
     name: risk-portal-admin
 
   profiles:
     active: dev
+
+dubbo:
+  application:
+    name: risk-portal-admin-dubbo-provider
+
+  scan:
+    base-packages: com.github.risk.portal.admin.api
+
+  protocol:
+    name: dubbo
+    port: -1
+
+  registry:
+    address: nacos://127.0.0.1:7787
+
 

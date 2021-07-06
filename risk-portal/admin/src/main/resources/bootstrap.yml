@@ -29,6 +29,6 @@ dubbo:
     port: -1
 
   registry:
-    address: nacos://127.0.0.1:7787
+    address: nacos://127.0.0.1:7787?namespace=533bbaa5-1847-490c-bb8e-e30deb0aed47 #默认为public时可不填写namespace
 
 

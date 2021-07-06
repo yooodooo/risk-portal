@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="dubbo-consumer-xml-demo"/>
+
+    <dubbo:registry address="nacos://127.0.0.1:7787?namespace=533bbaa5-1847-490c-bb8e-e30deb0aed47"/>
+
+    <dubbo:reference id="eventApi" interface="com.github.risk.portal.api.admin.EventApi" version="1.0.0"/>
+</beans>

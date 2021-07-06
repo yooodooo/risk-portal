@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /risk-
+    context-path: /risk-admin
 
 spring:
   datasource:
